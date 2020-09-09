@@ -1,0 +1,25 @@
+@media (min-width: 800px) {
+  .main {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #snake {
+    width: 26em;
+    height: 26em;
+  }
+
+  .scoreboard {
+    font-size: 1.5em;
+    position: fixed;
+    right: 3%;
+    top: 20%;
+  }
+
+  .controls {
+    position: relative;
+    width: 9em;
+    height: 9em;
+    margin-top: 2em;
+  }
+}
