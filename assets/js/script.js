@@ -29,8 +29,8 @@ function initGame() {
 
   if (direction == 'right') snakeX += box;
   if (direction == 'left') snakeX -= box;
-  if (direction == 'up') snakeX -= box;
-  if (direction == 'down') snakeX += box;
+  if (direction == 'up') snakeY -= box;
+  if (direction == 'down') snakeY += box;
 
   snake.pop();
 
