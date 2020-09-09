@@ -15,6 +15,8 @@ const up = document.querySelector('#up');
 const left = document.querySelector('#left');
 const right = document.querySelector('#right');
 const down = document.querySelector('#down');
+const scoreboard = document.querySelector('.scoreboard');
+let points = 0;
 
 function createBackground() {
   context.fillStyle = 'lightgreen';
@@ -58,6 +60,11 @@ function update(event) {
   if (event.keyCode == 40 && direction != 'up') direction = 'down';
 }
 
+function updateScoreboard() {
+  points++;
+  scoreboard.textContent = 'Score: ' + points;
+}
+
 function initGame() {
   if (snake[0].x > 15 * box && direction == 'right') snake[0].x = 0;
   if (snake[0].x < 0 && direction == 'left') snake[0].x = 16 * box;
@@ -86,6 +93,7 @@ function initGame() {
   if (snakeX != food.x || snakeY != food.y) {
     snake.pop();
   } else {
+    updateScoreboard();
     food.x = Math.floor(Math.random() * 15 + 1) * box;
     food.y = Math.floor(Math.random() * 15 + 1) * box;
   }

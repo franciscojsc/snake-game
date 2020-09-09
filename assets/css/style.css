@@ -33,6 +33,11 @@ body {
   height: calc(100vh - 5em);
 }
 
+.scoreboard {
+  padding-bottom: 1em;
+  color: rgb(8, 74, 133);
+}
+
 #snake {
   width: 16em;
   height: 16em;
