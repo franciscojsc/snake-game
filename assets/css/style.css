@@ -1,11 +1,26 @@
 body {
-  height: 95vh;
-  width: 95vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  color: rgb(52, 165, 52);
   font-family: 'Press Start 2P', cursive;
+  font-size: 18px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #082d38;
+  height: 5em;
+  width: 100%;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.header h1 {
+  font-size: 1.5em;
+  color: rgb(52, 165, 52);
+  text-align: center;
+}
+
+.header img {
+  height: 4em;
+  padding: 0.3em;
 }
