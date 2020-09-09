@@ -11,6 +11,10 @@ let food = {
   x: Math.floor(Math.random() * 15 + 1) * box,
   y: Math.floor(Math.random() * 15 + 1) * box,
 };
+const up = document.querySelector('#up');
+const left = document.querySelector('#left');
+const right = document.querySelector('#right');
+const down = document.querySelector('#down');
 
 function createBackground() {
   context.fillStyle = 'lightgreen';
@@ -30,6 +34,22 @@ function drawFood() {
 }
 
 document.addEventListener('keydown', update);
+
+left.addEventListener('click', function () {
+  if (direction != 'right') direction = 'left';
+});
+
+up.addEventListener('click', function () {
+  if (direction != 'down') direction = 'up';
+});
+
+right.addEventListener('click', function () {
+  if (direction != 'left') direction = 'right';
+});
+
+down.addEventListener('click', function () {
+  if (direction != 'up') direction = 'down';
+});
 
 function update(event) {
   if (event.keyCode == 37 && direction != 'right') direction = 'left';

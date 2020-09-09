@@ -29,10 +29,67 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   height: calc(100vh - 5em);
 }
 
 #snake {
   width: 16em;
   height: 16em;
+}
+
+.controls {
+  position: relative;
+  width: 7em;
+  height: 7em;
+  margin-top: 2em;
+}
+
+.controls .arrow {
+  width: 0;
+  height: 0;
+}
+
+.controls .arrow:hover {
+  opacity: 0.5;
+}
+
+.controls .up-arrow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-left: 1.5em solid transparent;
+  border-right: 1.5em solid transparent;
+  border-bottom: 1.5em solid #082d38;
+}
+
+.controls .down-arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-left: 1.5em solid transparent;
+  border-right: 1.5em solid transparent;
+  border-top: 1.5em solid #082d38;
+}
+
+.controls .left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  border-top: 1.5em solid transparent;
+  border-bottom: 1.5em solid transparent;
+  border-right: 1.5em solid #082d38;
+}
+
+.controls .right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  border-top: 1.5em solid transparent;
+  border-bottom: 1.5em solid transparent;
+  border-left: 1.5em solid #082d38;
 }
