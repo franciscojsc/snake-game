@@ -1,4 +1,4 @@
-# :snake: Snake Game
+# Snake :snake: Game
 
 Clássico jogo da cobrinha, desenvolvido sobre orientação da instrutora [Gabriela Pinheiro](https://www.linkedin.com/in/gabrielapinheiro129/) na plataforma [Digital Innovation One](https://digitalinnovation.one/).
 
